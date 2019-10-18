@@ -5,6 +5,7 @@
   padding: 7px 15px;
   border-left: 3px solid rgba(100, 100, 100, 0.2);
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .Header:after {
