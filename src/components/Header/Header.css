@@ -1,0 +1,31 @@
+.Header {
+  color: darkgray;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 15px;
+  border-left: 3px solid rgba(100, 100, 100, 0.2);
+  overflow: hidden;
+}
+
+.Header:after {
+  content: '';
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+	** благодаря этому линия заполнит все свободное пространство
+	** слева и справа от текста
+	*/
+  width: 100%;
+  height: 1px;
+  background: rgba(100, 100, 100, 0.2);
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+	** благодаря этому создается нужный отступ между линиями и текстом
+	*/
+  border: solid #eee;
+  border-width: 0 15px;
+  margin-right: -100%;
+}
