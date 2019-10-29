@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import {Route, Switch} from 'react-router-dom';
 import Layout from './components/hoc/Layout/Layout';
-import Header from './components/Header/Header';
-import Actions from './components/Actions/Actions';
+import MainView from './containers/MainView/MainView';
+import CreateInvoice from './containers/CreateInvoice/CreateInvoice';
 
 class App extends Component {
   render() {
     return (
       <Layout>
-        <Header>Invoices</Header>
-        <Actions/>
+        <Switch>
+          <Route path="/" exact component={MainView} />
+          <Route path="/create" component={CreateInvoice} />
+        </Switch>
       </Layout>
     )
   }

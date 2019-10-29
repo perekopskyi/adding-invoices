@@ -1,11 +1,12 @@
-.Actions {
+.Invoices {
   box-sizing: border-box;
   padding: 20px;
   background: #fff;
   border: 1px solid rgba(100, 100, 100, 0.2);
   margin-bottom: 30px;
 }
-.Actions h2 {
+
+.Invoices h2 {
   padding: 0;
   margin: 0 0 10px;
   font-size: 14px;
