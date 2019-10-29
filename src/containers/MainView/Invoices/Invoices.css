@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 20px;
   background: #fff;
+  color: rgb(88, 88, 88);
   border: 1px solid rgba(100, 100, 100, 0.2);
   margin-bottom: 30px;
 }
@@ -10,4 +11,22 @@
   padding: 0;
   margin: 0 0 10px;
   font-size: 14px;
+}
+
+.Invoices table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Invoices thead {
+  background: #eee;
+}
+.Invoices td {
+  width: 20%;
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.Invoices .number {
+  color: rgb(0, 102, 255)
 }
